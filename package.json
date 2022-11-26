@@ -1,0 +1,28 @@
+{
+  "name": "xmas-theme",
+  "version": "1.0.0",
+  "description": "Xmas card creator theme",
+  "scripts": {
+    "clean": "rm -r dist/",
+    "dev": "parcel watch assets/scripts/theme.js",
+    "build": "parcel build assets/scripts/theme.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matias-autio/xmas-theme.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matias-autio/xmas-theme/issues"
+  },
+  "homepage": "https://github.com/matias-autio/xmas-theme#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.8.0",
+    "@tailwindcss/typography": "^0.5.8",
+    "parcel": "^2.8.0",
+    "postcss": "^8.4.19",
+    "tailwindcss": "^3.2.4"
+  }
+}

@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .primary-menu{
+    a{
+      @apply hover:text-black flex p-4 border-b-2 border-transparent hover:border-black;
+    }
+  } 
+}
+
+@layer components {
+    .tab {
+      @apply inline-block p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300;
+      &.active {
+        @apply inline-block p-4 text-blue-700 rounded-t-lg border-b-2 border-blue-700;
+      }
+    }
+
+    .btn{
+      @apply px-6 py-3 rounded-full text-center shadow-lg text-blue-700 border-2 border-blue-700 font-bold hover:bg-blue-700 hover:text-white;
+    }
+
+}
+
+@layer utilities {
+  .animate-scale-up{
+    transition: transform 0.3s, box-shadow 0.3s;
+    &:hover{
+      transform: scale(1.05) translate(0rem, -1.75rem);
+      @apply shadow-2xl;
+    }
+  }
+}
